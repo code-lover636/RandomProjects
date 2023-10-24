@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B1B1B;
+}
+.home-page .left-side {
+  height: 100vh;
+  width: 10vw;
+  margin-top: 0;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-page .left-side .name {
+  font-family: Orbitron;
+  font-size: 1.25rem;
+  font-style: normal;
+  color: #00F0C5;
+  padding: 1em 1em 1em 1em;
+  cursor: pointer;
+}
+.home-page .left-side .social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+.home-page .left-side .social-media svg {
+  cursor: pointer;
+}
+.home-page .left-side .social-media svg:hover path {
+  fill: #00F0C5;
+}
+.home-page main {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-page main .large {
+  position: absolute;
+  top: 20px;
+  left: 15vw;
+  font-family: "Jost";
+  font-weight: 900;
+  font-size: 250px;
+  line-height: 300px;
+  color: #1F1F1F;
+  z-index: 3;
+}
+.home-page main .line1, .home-page main .line2 {
+  z-index: 1;
+  width: 1px;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 35vw;
+}
+.home-page main .line2 {
+  left: 70vw;
+}
+.home-page main .part1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6em 1em 5em 3em;
+}
+.home-page main .part1 .light #plug {
+  transform: translateX(-25px);
+}
+.home-page main .part1 .light #light {
+  -webkit-animation: flickering 5s step-start infinite;
+          animation: flickering 5s step-start infinite;
+}
+.home-page main .part1 small {
+  font-family: "Consolas";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 104.5%;
+  color: rgba(255, 255, 255, 0.781);
+  cursor: pointer;
+}
+.home-page main .part2 {
+  height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-page main .part2 .electric2 {
+  margin: 0em 3em;
+  align-self: flex-end;
+  margin-bottom: 2em;
+}
+.home-page main .part2 .electric3 {
+  align-self: flex-start;
+  transform: translateX(-10em);
+}
+.home-page main .hello {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 140px;
+  color: #FFFFFF;
+  line-height: 110%;
+  cursor: pointer;
+}
+.home-page main .hello span {
+  color: #00F0C5;
+}
+.home-page nav {
+  height: 100vh;
+  width: 10vw;
+  border-left: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.home-page nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  gap: 1.8em;
+  align-items: center;
+  list-style-type: none;
+  transform: rotate(-90deg);
+}
+.home-page nav ul .nav-items {
+  text-decoration: none;
+  transform: rotate(90deg);
+  color: white;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.home-page nav ul .nav-items:hover {
+  color: #00F0C5;
+}
+
+@-webkit-keyframes flickering {
+  23%, 30%, 100% {
+    opacity: 1;
+  }
+  20%, 26%, 35%, 50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flickering {
+  23%, 30%, 100% {
+    opacity: 1;
+  }
+  20%, 26%, 35%, 50% {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1335px) {
+  .home-page .left-side .name {
+    font-size: 0.9rem;
+  }
+  .home-page main .part2 .hello {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .home-page main .part1 {
+    padding: 10em 1em 8em 3em;
+  }
+  .home-page main .part1 .light {
+    width: 280px;
+    height: auto;
+  }
+  .home-page main .part2 {
+    justify-content: flex-end;
+  }
+  .home-page main .part2 .hello {
+    font-size: 80px;
+  }
+  .home-page main .part2 .electric2 {
+    display: none;
+  }
+  .home-page main .part2 .electric3 {
+    transform: translateX(-13em);
+  }
+}/*# sourceMappingURL=main.css.map */

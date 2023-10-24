@@ -1,0 +1,37 @@
+{"intents": [
+    {
+    "tag": "greetings", 
+    "patterns": ["hi", "hello", "hey", "hola", "bonjour", "greetings"],
+    "responses": ["Hello!", "Hi", "Hey", "Hola", "Bonjour", "Greetings", "Ready to comply"]
+    },
+    {
+    "tag": "goodbye", 
+    "patterns": ["bye", "goodbye", "adios", "hasta luego","See you later"],
+    "responses": ["Bye!", "Goodbye", "Adios", "Hasta luego", "See you later", "Bye bye"]
+    },
+    {
+    "tag": "thanks", 
+    "patterns": ["thanks", "thank you", "gracias"],
+    "responses": ["You're welcome!", "Happy to help you", "I am always here for you"]
+    },
+    {
+    "tag": "no", 
+    "patterns": ["no", "nope", "nop", "nop","never","not"],
+    "responses": ["okay", "why?", "fine", "That's okay"]
+    },
+    {
+    "tag": "yes", 
+    "patterns": ["yes", "si", "sí", "sí"],
+    "responses": ["Yup", "Alright then", "Great", "Nice"]
+    },
+    {
+    "tag": "name",
+    "patterns": ["name", "who are you", "what is your name", "what should I call you"],
+    "responses": ["My name is Lucy", "I am Lucy", "I am called Lucy", "Call me Lucy"]
+    },
+    {
+    "tag": "age",
+    "patterns": ["age", "how old are you", "what is your age"],
+    "responses": ["I am 1 year old", "Does age matter?", "Guess it", "I am young"]
+    }
+]}

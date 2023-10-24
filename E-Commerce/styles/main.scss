@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@700&family=Kaushan+Script&family=Poppins:wght@300;500;600;700;800;900&display=swap');
+
+// Colors
+$light-blue: #E8F9FD;
+$regular-blue: #0BA1DD;
+$medium-blue: #2256CD;
+$semi-blue: #12204E;
+$dark-blue: #000000;
+$grey: #A6A9B6;
+
+// Defaults
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background: $dark-blue;
+    overflow: hidden;
+    overflow-y: scroll;
+    ul{
+        list-style-type: none;
+        li a{
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    section{
+        width: 100vw;
+        height: 100vh;
+        background: $light-blue;
+        a{
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}
+
+// Header
+.mobile-header{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.2em 2.2em;
+}
+header{
+    display: none;
+}
+
+// -------Home Page--------- //
+
+// hero page
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .mind-map{display: none;}
+    .heading{
+        color: $grey;
+        font-family: 'Kaushan Script';
+        font-weight: 400;
+        font-size: 4.375em;
+        span{
+            color: $regular-blue;
+        }
+    }
+    .hero-img{
+        width: 100%;
+        height: auto;
+    }
+    .main-heading-wrapper{
+        .main-heading{
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 28px;
+            text-align: center;
+            color: $medium-blue;
+            display: flex;
+            flex-direction: column;
+            .heart{
+                color: red;
+                padding-left: 10px;
+            }
+        }
+        .tagline{
+            color: $regular-blue;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center;
+            padding-top: 1em;
+        }
+    }
+}
